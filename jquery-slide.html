@@ -37,14 +37,24 @@
 
         $('#button').click(function () {
 
+        setInterval(function() {
+
             i++;
             var url = 'img/' + i + '.jpg'
-
-
             $('#frameImg').attr('src', url);
+            if (i == 5) {
+                i = 0
+            }
+        },1000);
+
 
 
         });
+
+
+
+
+
 
     })
 
