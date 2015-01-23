@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Example</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
+<style>
+    .test{
+        font-size: 10px;
+    }
+
+
+    .div2{
+        display:none;
+    }
+    #back{
+        display: none;
+    }
+</style>
+
+
+
+</head>
+<body>
+<div class="container">
+    <button>click me</button>
+    <button id="back">Back</button>
+
+
+
+    <h1>I am heading</h1>
+
+
+</div>
+<div class="container" id="div2">
+
+    <div class="well">
+<h1 id="hello">Hello World</h1>
+        <p>I am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am headingI am heading</p>
+
+
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('button').click(function () {
+        $('h1').addClass("well");
+        $('#div2').show();
+
+    });
+
+    $('#hello').click(function(){
+        $('#div2').animate({'margin-top':'200px','margin-left':'100px'},1000);
+        $('#back').show()
+    });
+
+    $('#back').click(function(){
+        $('#div2').animate({'margin-top':'0px','margin-left':'0px'},1000);
+
+    });
+});
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
