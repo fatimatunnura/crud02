@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+
+    .sized{
+        width:200px;
+        float:left;
+    }
+
+
+</style>
+<div class="container">
+    <img class="img-thumbnail sized " src="1.jpg">
+
+    <img class="img-thumbnail sized " src="2.jpg">
+
+    <img class="img-thumbnail sized " src="3.jpg">
+
+    <img class="img-thumbnail sized " src="4.jpg">
+
+    <img class="img-thumbnail sized " src="5.jpg">
+    <button id="button">Next</button>
+
+</div>
+
+
+    <img id="frameImg" class="img-thumbnail" src='1.jpg'>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var i=1;
+            $('.sized').click(function(){
+                var url=$(this).attr('src');
+                $('#frameImg').attr('src', url);
+                alert(url);
+                $('#frameImg').attr('src',url);
+
+
+            })
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
